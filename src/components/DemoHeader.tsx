@@ -13,7 +13,7 @@ export default function DemoHeader() {
   }
 
   return (
-    <header className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
+    <header className="bg-pfp-cream-100 border-b border-pfp-cream-200 px-6 py-3 flex items-center justify-between">
       <div className="flex items-center gap-3">
         <div className="w-8 h-8 relative">
           <Image 
