@@ -18,8 +18,8 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "PFP - Global HR & Payroll Platform",
-  description: "Hire, onboard and pay your remote team. The all-in-one platform for modern companies to manage global teams seamlessly.",
+  title: "Profit First Professionals | Business Coaching voor Financials",
+  description: "De community voor financials die streven naar betere resultaten en een unieke positie. Verander je praktijk van uurtje-factuurtje naar strategisch advies met PFP.",
 };
 
 import DemoHeader from "@/components/DemoHeader";
