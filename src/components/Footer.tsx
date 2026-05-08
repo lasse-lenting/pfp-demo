@@ -33,7 +33,7 @@ export default function Footer() {
                 className="w-full px-4 py-3 rounded-xl border border-neutral-200 bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                 required
               />
-              <Button type="submit" size="lg" className="w-full shadow-md shadow-primary/10">
+              <Button type="submit" size="lg" className="w-full">
                 Verstuur
               </Button>
             </form>

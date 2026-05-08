@@ -14,7 +14,7 @@ export default function PreFooter() {
           </h2>
           
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-            <Button size="lg" variant="secondary" className="shadow-xl">
+            <Button size="lg" variant="default">
               Plan een kennismakingsgesprek
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-white/20 hover:bg-white/10 text-white">

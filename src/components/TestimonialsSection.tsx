@@ -73,7 +73,7 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <Button size="xl" className="shadow-lg shadow-primary/20">
+          <Button size="xl">
             Zet ook de volgende stap
           </Button>
         </div>

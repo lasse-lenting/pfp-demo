@@ -42,7 +42,7 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className="flex items-center">
-          <Button size="xl" className="rounded-full shadow-md shadow-primary/10">
+          <Button size="xl" className="rounded-full">
             Join waitlist
           </Button>
         </div>

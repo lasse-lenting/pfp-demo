@@ -23,7 +23,7 @@ export default function MeetCoachSection() {
             </h2>
 
             <div className="w-full max-w-md">
-              <div className="relative aspect-square rounded-[32px] overflow-hidden mb-6 shadow-xl">
+              <div className="relative aspect-square rounded-[32px] overflow-hidden mb-6">
                 <Image
                   src="/gino.png"
                   alt="Gino Blauw"
@@ -34,7 +34,7 @@ export default function MeetCoachSection() {
               <div>
                 <h3 className="text-2xl font-bold text-pfp-dark-800">Gino Blauw</h3>
                 <p className="text-pfp-dark-300 font-medium italic mb-6">Oprichter van Profit First Professionals NL</p>
-                <Button size="xl" className="w-full sm:w-auto shadow-md shadow-primary/10">
+                <Button size="lg" variant="default" className="w-full sm:w-auto">
                   Plan je strategiegesprek
                 </Button>
               </div>

@@ -53,18 +53,19 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.508 0.118 165.612);
-  --primary-foreground: oklch(0.979 0.021 166.113);
+  --primary: oklch(0.38 0.12 260);
+  --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --accent: oklch(78.014% 0.18081 124.715);
+  --accent-foreground: oklch(1 0 0);
+  --accent-shadow: oklch(0.5 0.15 125);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --ring: oklch(0.38 0.12 260);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -73,12 +74,12 @@
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.596 0.145 163.225);
-  --sidebar-primary-foreground: oklch(0.979 0.021 166.113);
+  --sidebar-primary: oklch(0.38 0.12 260);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-ring: oklch(0.38 0.12 260);
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
 }
@@ -90,18 +91,19 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.432 0.095 166.913);
-  --primary-foreground: oklch(0.979 0.021 166.113);
+  --primary: oklch(0.48 0.12 260);
+  --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.274 0.006 286.033);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --accent: oklch(0.75 0.15 125);
+  --accent-foreground: oklch(1 0 0);
+  --accent-shadow: oklch(0.4 0.1 125);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --ring: oklch(0.48 0.12 260);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -109,12 +111,12 @@
   --chart-5: oklch(0.269 0 0);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.696 0.17 162.48);
-  --sidebar-primary-foreground: oklch(0.262 0.051 172.552);
+  --sidebar-primary: oklch(0.48 0.12 260);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar-ring: oklch(0.48 0.12 260);
 }
 
 @layer base {
@@ -123,11 +125,13 @@
     outline-color: color-mix(in oklch, var(--ring) 50%, transparent);
     @apply border-border outline-ring/50;
   }
+
   body {
     background-color: var(--background);
     color: var(--foreground);
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
     scroll-behavior: smooth;
@@ -136,17 +140,28 @@
 
 /* ===== PFP Brand Design Tokens ===== */
 @theme inline {
-  /* PFP Brand Colors */
-  --color-pfp-teal-50: #e8f5f0;
-  --color-pfp-teal-100: #d4ede8;
-  --color-pfp-teal-200: #a8dbd0;
-  --color-pfp-teal-300: #7cc8b8;
-  --color-pfp-teal-400: #4fb6a0;
-  --color-pfp-teal-500: #2a9d8f;
-  --color-pfp-teal-600: #1a7a6d;
-  --color-pfp-teal-700: #1a6b6a;
-  --color-pfp-teal-800: #145550;
-  --color-pfp-teal-900: #0f3f3c;
+  /* PFP Brand Colors - Updated to Blue & Lime */
+  --color-pfp-green-50: #f7fee7;
+  --color-pfp-green-100: #ecfccb;
+  --color-pfp-green-200: #d9f99d;
+  --color-pfp-green-300: #bef264;
+  --color-pfp-green-400: #a3e635;
+  --color-pfp-green-500: #84cc16;
+  --color-pfp-green-600: #65a30d;
+  --color-pfp-green-700: #4d7c0f;
+  --color-pfp-green-800: #3f6212;
+  --color-pfp-green-900: #365314;
+
+  --color-pfp-blue-50: #eff6ff;
+  --color-pfp-blue-100: #dbeafe;
+  --color-pfp-blue-200: #bfdbfe;
+  --color-pfp-blue-300: #93c5fd;
+  --color-pfp-blue-400: #60a5fa;
+  --color-pfp-blue-500: #3b82f6;
+  --color-pfp-blue-600: #2563eb;
+  --color-pfp-blue-700: #1d4ed8;
+  --color-pfp-blue-800: #1e40af;
+  --color-pfp-blue-900: #1e3a8a;
 
   --color-pfp-cream-50: #fefdfb;
   --color-pfp-cream-100: #faf7f0;
@@ -178,6 +193,7 @@
     opacity: 0;
     transform: translateY(24px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -185,18 +201,35 @@
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes logo-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-fade-in-up {
@@ -215,13 +248,26 @@
   animation: logo-scroll 30s linear infinite;
 }
 
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-33.33%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.33%);
+  }
 }
 
 .animate-marquee {

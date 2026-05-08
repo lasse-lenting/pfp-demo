@@ -34,7 +34,7 @@ export default function ValuePropositionSection() {
               <p className="text-pfp-dark-300 mb-6">
                 Plan direct een kennismakingsgesprek om de mogelijkheden te bespreken.
               </p>
-              <Button size="xl" className="w-full shadow-lg shadow-primary/20 hover:shadow-primary/30">
+              <Button size="xl" className="w-full">
                 Plan een kennismakingsgesprek
               </Button>
             </div>

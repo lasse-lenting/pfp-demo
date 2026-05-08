@@ -47,7 +47,7 @@ export default function WebinarDiscoverySection() {
               <p className="text-pfp-dark-300 text-sm mb-6 leading-relaxed">
                 Er staat momenteel geen nieuwe informatiesessie in de agenda. We verwachten in juni meer informatie te hebben. Wil je niet wachten?
               </p>
-              <Button size="xl" className="w-full sm:w-auto shadow-md shadow-primary/10">
+              <Button size="xl" className="w-full sm:w-auto">
                 Plan een kennismakingsgesprek
               </Button>
             </div>

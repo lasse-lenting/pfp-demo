@@ -29,7 +29,7 @@ export default function HeroSection() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-16 animate-fade-in-up delay-300 w-full sm:w-auto">
-          <Button size="xl" className="shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all">
+          <Button size="xl" className="transition-all">
             Aanmelden kennismakingsgesprek
           </Button>
         </div>
